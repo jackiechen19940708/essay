@@ -1,0 +1,8 @@
+MSB
+LSB
+
+Big-endian MSB在低地址，传输放在流的开始，mac java tcp
+Little-endian MSB在高地址，传输放在留的末尾，x86
+
+处理网络流（尤其涉及异构PC）需要特别注意
+
