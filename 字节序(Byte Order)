@@ -6,3 +6,20 @@ Little-endian MSB在高地址，传输放在留的末尾，x86
 
 处理网络流（尤其涉及异构PC）需要特别注意
 
+#include <iostream>
+using namespace std;
+
+
+int main(){
+
+    int a = 0x12345678;
+    long long aa = 0x0102030405060708;
+
+    char c = *((char*)&a);
+    char d = *(((char*)&aa));
+    cout << (int)c << endl;
+    cout << (int)d << endl;
+
+
+
+}
